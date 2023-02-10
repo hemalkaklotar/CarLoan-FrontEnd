@@ -1,0 +1,128 @@
+.form-main {
+  width: 100%;
+  min-height: 100vh;
+}
+.flex-center-start {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+.form-wrapper {
+  width: 100%;
+  margin: auto;
+  padding: 2rem 0;
+  max-width: 600px;
+}
+.otppromtviewer .form-wrapper form {
+  min-height: 65vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+@media only screen and (min-width: 576px) {
+  .form-wrapper form {
+    min-height: 550px;
+  }
+}
+
+.form-wrapper .otppromtviewer {
+  background-color: #cff1cf5b;
+  backdrop-filter: blur(8px);
+  border: 1px solid #cff1cf;
+}
+.otp-text{
+   font-size: 22px !important;
+   font-weight: 700;
+   color: var(--color-primary);
+   letter-spacing: 3px !important;
+   text-align: center !important;
+}
+.backdrop-12{
+  background-color: #efffef0c !important;
+  letter-spacing: 12px !important;
+
+}
+.form-wrapper .selct-box input {
+  border: none !important;
+  box-shadow: none !important;
+  /* width: 420px !important; */
+  /* text-align: center !important; */
+}
+/* @media only screen and (max-width: 420px) {
+  .form-wrapper .selct-box input {
+    width: 275px !important;
+  }
+} */
+.form-wrapper .btn-area input {
+  width: 210px;
+  height: 56px;
+  padding: 14px 0;
+  text-align: center;
+  border: 0.16rem solid solid var(--color-primary) !important;
+  background-color: var(--color-primary);
+  border-radius: 26px;
+  color: #fff !important;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+.form-wrapper .btn-area input:hover {
+  background-color: #fff;
+  color: var(--color-primary) !important;
+  border: 0.16rem solid var(--color-primary) !important;
+}
+
+.form-wrapper label {
+  font-size: 0.9rem;
+  margin: 0 0 10px 12px;
+}
+.form-wrapper input,
+.form-wrapper select,
+.form-wrapper .selector-item_label {
+  padding: 12px;
+  border: 1px solid var(--color-primary);
+  border-radius: 24px;
+  text-align: center;
+  transition: 0.4s ease;
+  color: var(--color-primary) !important;
+  font-weight: 500;
+  font-size: 17px !important;
+  letter-spacing: 2px;
+}
+input:focus,
+select:focus {
+  box-shadow: none !important;
+  border: 1px solid var(--color-secondary) !important;
+  box-shadow: 12px 22px 19px rgb(204, 204, 204) !important;
+}
+option {
+  min-height: 32px !important;
+  padding: 22px 0 !important;
+  border: 1px solid red !important;
+}
+a {
+  color: var(--color-primary) !important;
+  text-decoration: none !important;
+  font-weight: 500;
+  font-size: 19px;
+  margin: 22px 0;
+}
+/*  car details */
+.form-wrapper .selector-item_radio {
+  appearance: none;
+  display: none;
+}
+/* .form-wrapper :not(.selector-item_label ) .selector-item_radio:checked{ */
+
+.form-wrapper :has(.selector-item_radio:checked) > .selector-item_label {
+  background-color: #ffffff;
+  border: 1px solid var(--color-primary);
+  color: var(--color-primary) !important;
+  transform: translateY(-2px);
+}
+.form-wrapper .selector-item_label {
+  text-align: center;
+  border: 1px solid #b4b4b4;
+  color: #7e7e7e !important;
+  width: 100%;
+  display: block !important;
+}

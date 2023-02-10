@@ -1,0 +1,20 @@
+.h-100vh {
+  height: 100vh !important;
+}
+.x {
+  margin: 22px !important;
+}
+.dropdown{
+  top: 43px;
+}
+.dropdown ul li .child {
+  position: absolute;
+  left: -146px;
+  top: 0px;
+  display: none;
+  min-width: 150px;
+  max-width: 220px;
+}
+.dropdown ul li:hover .child {
+  display: block;
+}

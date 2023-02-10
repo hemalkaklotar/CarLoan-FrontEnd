@@ -1,0 +1,46 @@
+.img-chat-boat {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  overflow: hidden;
+  /* animation-name: imgfloat; */
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+@keyframes imgfloat {
+  0% {
+    transform: translateY(0);
+    box-shadow: 12px 14px 22px rgb(125, 125, 125);
+  }
+  50% {
+    transform: translateY(-12px);
+    box-shadow: 12px 14px 22px rgb(233, 233, 233);
+  }
+  100% {
+    transform: translateY(0px);
+    box-shadow: 12px 14px 22px rgb(125, 125, 125);
+  }
+}
+.img-chat-boat img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+.ketty-name {
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: var(--color-dark-300);
+}
+.msg-box-wrapper {
+  padding: 0.8rem 1.4rem;
+  background-color: rgba(78, 245, 78, 0.164);
+  border-radius: 1.9rem 0 1.9rem 0;
+  box-shadow: 15px 22px 22px rgba(97, 97, 97, 0.137);
+}
+.help-suggetion-text {
+  font-size: 16px;
+  color: var(--color-dark-200);
+}
+.blank-width-65 {
+  width: 65px;
+}

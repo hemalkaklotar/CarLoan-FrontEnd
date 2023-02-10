@@ -1,0 +1,11 @@
+import React from "react";
+
+const Loading = () => {
+  return (
+    <div className="d-flex justify-content-center my-5">
+      <div className="loader"></div>
+    </div>
+  );
+};
+
+export default Loading;

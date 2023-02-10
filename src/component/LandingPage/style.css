@@ -1,0 +1,187 @@
+.wrapper {
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--color-main-50);
+  position: relative;
+}
+
+.tittle p {
+  color: var(--color-dark-300);
+  font-size: 1.8rem;
+  font-weight: 800;
+  letter-spacing: 0.1rem;
+}
+.buttet-Point .list-item span {
+  color: var(--color-dark-200);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.buttet-Point {
+  margin-left: 3.2rem;
+}
+.buttet-Point .list-item svg {
+  font-size: 3px;
+  height: 17px;
+  width: 17px;
+}
+
+.btn-get-loan-option a {
+  display: inline-block;
+  text-align: center;
+  width: 275px;
+  border-radius: 40px;
+  padding: 16px 12px;
+  background-color: var(--color-primary);
+  color: white !important;
+  font-size: 1.2rem;
+  border: 2px solid var(--color-primary);
+  font-weight: 500;
+  box-shadow: 16px 22px 14px #0392032a;
+  transition: 0.3s ease-in-out;
+}
+.btn-get-loan-option a:hover {
+  background-color: var(--color-light-100);
+  color: var(--color-primary) !important;
+  box-shadow: 16px 22px 14px #7272722a;
+  transform: translateY(-2px);
+}
+
+.btn-area p {
+  position: relative;
+  color: var(--color-dark-300);
+}
+
+.btn-area a {
+  font-weight: 800;
+  letter-spacing: 1px;
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+.car-img-box {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden !important;
+  transition: 0.6s ease-in-out;
+}
+
+.car-img-box img {
+  width: 115%;
+  height: 115%;
+  margin-left: -35px;
+  animation-name: imgAnimate;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  transform: scale(12%);
+}
+
+@keyframes imgAnimate {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.landing .card-actions {
+  width: 100%;
+}
+.card-actions .card-wraper {
+  box-shadow: 12px 22px 18px rgb(221, 221, 221);
+  border: 1px solid rgb(238, 238, 238);
+  border-radius: 8px;
+}
+.card-wraper svg {
+  width: 16px;
+  height: 16px;
+}
+
+.card-wraper .card-heading {
+  color: var(--color-primary);
+  font-size: 16px;
+}
+.card-wraper .card-sub-heading {
+  font-size: 16px;
+  margin-top: 6px;
+  color: var(--color-dark-200);
+}
+
+@media only screen and (min-width: 432px) and (max-width: 576px) {
+  .tittle p {
+    font-size: 2.1rem;
+  }
+  .buttet-Point .list-item span {
+    font-size: 19px;
+  }
+  .card-wraper .card-heading {
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .card-wraper .card-sub-heading {
+    font-size: 14px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+  .tittle p {
+    font-size: 3.3rem;
+  }
+  .buttet-Point .list-item span {
+    font-size: 23px;
+  }
+  .card-wraper .card-heading {
+    font-size: 20px;
+  }
+  .card-wraper .card-sub-heading {
+    font-size: 18px;
+  }
+  .card-wraper svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .tittle p {
+    font-size: 3.3rem;
+  }
+  .buttet-Point .list-item span {
+    font-size: 25px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .tittle p {
+    font-size: 2.9rem;
+  }
+  .btn-area {
+    margin-left: -12%;
+  }
+  .wrapper {
+    min-height: 0;
+  }
+  .card-wraper .card-heading {
+    font-size: 24px;
+  }
+  .card-wraper .card-sub-heading {
+    font-size: 16px;
+  }
+  .card-wraper svg {
+    width: 25px;
+    height: 25px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .tittle {
+    margin: 4.4rem 0 1.8rem;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .buttet-Point .list-item span {
+    font-size: 1.3rem;
+  }
+}
